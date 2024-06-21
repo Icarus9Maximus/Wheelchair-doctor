@@ -30,7 +30,6 @@ body {
 /* The entire navigation bar */
 
 .content {
-    /* position: fixed; */
     position: absolute;
     height: 53px;
     width: 100%;
