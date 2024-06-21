@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --first-color:#4ade80;
+    --second-color: #272727;
+    --third-color: #fff;
+    --fourth-color: #1d4ed8;
+    --fifth-color: #0000CD;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--second-color);
+    font-family: "Roboto";
+    overflow-x: hidden;
+}
+
+.show {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Assets/Wheelchair-doctor-background.jpg") no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* The entire navigation bar */
+
+.content {
+    /* position: fixed; */
+    position: absolute;
+    height: 53px;
+    width: 100%;
+    background-color: var(--fifth-color);
+    z-index: 4;
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    width: 800px;
+}
+
+.logo p {
+    position: absolute;
+    top: 5px;
+    left: 63px;
+    font-family: "Roboto";
+    color: var(--third-color);
+    font-size: 1.2rem;
+}
+
+.logo img {
+    width: 70px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.navigation-bar li {
+    list-style: none;
+}
+
+.home {
+    position: relative;
+    right: 45px;
+}
+
+.about {
+    position: relative;
+    right: -22px;
+    top: -24px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: var(--third-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.18s border-bottom;
+    margin-right: 14px;
+    margin-top: 33px;
+}
+
+.display-content {
+    position: absolute;
+    top: 34%;
+}
+
+.navigation-bar a:hover {
+    border-bottom: 3px solid var(--second-color);
+}
+
+h1 {
+    color: var(--fourth-color);
+}
+
+.display-content p {
+    color: var(--third-color);
+    width: 280px;
+    font-size: 1.3rem;
+    margin-left: 2.3rem;
+}
+
+.display-content {
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.text {
+    width: 100%;
+    color: var(--third-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 5s,
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent;}
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+.sub-heading {
+    margin-left: 2.3rem;
+}
+
+/* Buttons */
+
+.btn-md {
+    padding: 1rem 1.6rem;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    border: none;
+    margin-left: 3.4rem;
+}
+
+.btn-md:hover {
+    background-color: var(--fifth-color);
+    color: var(--third-color);
+}
+
+/* What we do */
+
+.separation {
+    margin-top: 30px;
+}
+
+.segment {
+    transition: 1s;
+}
+
+.segment:hover {
+    padding: 10px;
+}
+
+
+h2 {
+    color: var(--third-color);
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 51px;
+    color: var(--fifth-color);
+    font-family: "Roboto", sans-serif;
+}
+
+.center {
+    text-align: center;
+    margin-top: -1.8rem;
+}
+
+
+.highlight {
+    color: var(--fifth-color);
+}
+
+.feature {
+    margin-bottom: 2rem;
+}
+
+.tnw-logo {
+    height: 40px;
+    width: 100px;
+    margin-left: -102px;
+}
+
+/* Mission statement */
+
+.mission {
+    background-color: var(--third-color);
+}
+
+.mission-heading {
+    color: var(--second-color);
+    font-size: 2.4rem;
+}
+
+.mission-paragraph {
+    font-size: 1.5rem;
+}
+
+/* Carousel */
+
+.carousel-testimonies {
+    width: 100%;
+    background-color: var(--second-color);
+    height: 600px; 
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.flex-item {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 24px;
+    background-color: var(--second-color);
+    height: 450px;
+    width: 30%;
+    padding-top: 120px; 
+} 
+
+.grid-item {
+    background-color: var(--fifth-color);
+    height: 190px;
+    border-radius: 12px;
+    width: auto;
+}
+
+
+.display {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.top-paragraph {
+    position: absolute;
+    top: 2rem;
+    color: var(--third-color);
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.image-storer {
+    width: 75px;
+}
+
+img {
+    width: 100%;
+}
+
+.image-storer img {
+    border-radius: 8px;
+}
+
+.left-section {
+    position: relative;
+    width: 280px; 
+    height: 190px;
+    left: 83px;
+    top: -118px;
+    display: inline-block;
+}
+
+.left-section, .left-section-second {
+    position: relative;
+    width: 280px;
+    height: 190px;
+    left: 83px;
+    display: inline-block;
+} 
+
+.left-section-second {
+    top: -124px;
+}
+
+.p-md {
+    font-size: 1.6rem;
+    margin-block: 0;
+    text-align: center;
+    color: var(--third-color);
+}
+
+.location {
+    color: rgb(96, 96, 96);
+    text-align: center;
+}
+
+.location-paragraph {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    margin-top: 1.2rem;
+    color: var(--third-color);
+}
+
+/* Define the animation */
+/* @keyframes slideToLeft {
+    0% { transform: translateX(-100%); } Start off screen to the right
+    10% { transform: translateX(-60vw); } Move to the right of center
+    90% { transform: translateX(-5%); } Move slightly to the left
+    100% { transform: translateX(-100%); } Shoot offscreen to the left
+} */
+
+/* Apply the animation to the features section */
+/* .feature {
+    width: 100%; Adjust as needed */
+    /* overflow: hidden; Hide overflowing content */ 
+    /* animation: slideToLeft 5s infinite alternate;
+}
+
+
+/* Other Animated Features */
+/* @keyframes slideToLeft {
+    0% { margin-left: -50%;}
+    100% { margin-left: 80%;} 
+}
+
+ .col .feature-image {
+    width: 100%; 
+    overflow: hidden;
+    animation: slideToLeft 40s infinite alternate; 
+    animation: slideToLeft 5s linear infinite alternate;
+} */
+
+.mail {
+    margin-top: 0px;
+    width: 250px;
+}
+
+.sab {
+    margin-top: -30px;
+}
+
+.room {
+    margin-top: -20px;
+}
+
+.africa {
+    margin-top: -11px;
+}
+
+/* Our wheelchairs section */
+
+.stair-paragraph {
+    color: var(--third-color);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stair-photo {
+    border-radius: 8px;
+}
+
+/* Footer */
+
+.footer-title {
+    color: var(--third-color);
+    margin-left: 1rem;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.x-logo {
+    width: 58px;
+    border-radius: 18px;
+}
+
+.insta-logo {
+    width: 70px;
+    margin-top: -6px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+    .feature-image {
+        width: 50px;
+    }
+
+    /* .top-paragraph {
+        margin-bottom: 300px;
+    } */
+
+
+}
+
+@media (max-width: 723px) {
+    .logo p {
+        display: none;
+    }
+    
+    .btn-md {
+        padding: 1rem .5rem;
+    }
+
+    .text {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .logo img {
+        width: 70px;
+        margin-left: 4px;
+        margin-top: -10px;
+    }
+
+    /* .flex-item {
+        width: 100%;
+    }
+
+    .carousel-testimonies {
+        flex-direction: column;  
+        width: 90%;
+    }
+
+    .grid-item {
+        height: 225px;
+    }
+
+    .flex-item {
+        margin-top: 210px;
+        padding: 0;
+    }
+
+    .flex-item p {
+        margin-left: -5px;
+        margin-top: 8px;
+        width: 75%;
+    } */
+}
+
+@media (min-width: 723px) {
+    .logo img {
+        width: 70px;
+        margin-left: 2px;
+        margin-top: -10px;
+    }
+
+    .logo p {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        display: flex;
+    }
+
+    .logo img {
+        width: 70px;
+        margin-left: -8px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 454px) {
+    .x-logo {
+        width: 40px;
+        border-radius: 8px;
+        margin-top: 25px;
+    }
+
+    .facebook-icon {
+        width: 40px;
+        margin-top: 15px;
+    }
+
+    .insta-logo {
+        width: 45px;
+        margin-top: 20px;
+    }
+
+    .africa {
+        margin-top: -6px;
+    }
+
+    .sab {
+        margin-top: -6px;
+    }
+
+    .room {
+        margin-top: -4px;
+    }
+}
