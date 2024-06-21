@@ -359,4 +359,8 @@ h1 {
     .room {
         margin-top: -4px;
     }
+
+    .btn-md {
+        margin-left: 76px;
+    }
 }
