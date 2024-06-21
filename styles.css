@@ -322,35 +322,6 @@ img {
     color: var(--third-color);
 }
 
-/* Define the animation */
-/* @keyframes slideToLeft {
-    0% { transform: translateX(-100%); } Start off screen to the right
-    10% { transform: translateX(-60vw); } Move to the right of center
-    90% { transform: translateX(-5%); } Move slightly to the left
-    100% { transform: translateX(-100%); } Shoot offscreen to the left
-} */
-
-/* Apply the animation to the features section */
-/* .feature {
-    width: 100%; Adjust as needed */
-    /* overflow: hidden; Hide overflowing content */ 
-    /* animation: slideToLeft 5s infinite alternate;
-}
-
-
-/* Other Animated Features */
-/* @keyframes slideToLeft {
-    0% { margin-left: -50%;}
-    100% { margin-left: 80%;} 
-}
-
- .col .feature-image {
-    width: 100%; 
-    overflow: hidden;
-    animation: slideToLeft 40s infinite alternate; 
-    animation: slideToLeft 5s linear infinite alternate;
-} */
-
 .mail {
     margin-top: 0px;
     width: 250px;
@@ -413,12 +384,6 @@ img {
     .feature-image {
         width: 50px;
     }
-
-    /* .top-paragraph {
-        margin-bottom: 300px;
-    } */
-
-
 }
 
 @media (max-width: 723px) {
@@ -440,30 +405,6 @@ img {
         margin-left: 4px;
         margin-top: -10px;
     }
-
-    /* .flex-item {
-        width: 100%;
-    }
-
-    .carousel-testimonies {
-        flex-direction: column;  
-        width: 90%;
-    }
-
-    .grid-item {
-        height: 225px;
-    }
-
-    .flex-item {
-        margin-top: 210px;
-        padding: 0;
-    }
-
-    .flex-item p {
-        margin-left: -5px;
-        margin-top: 8px;
-        width: 75%;
-    } */
 }
 
 @media (min-width: 723px) {
