@@ -324,6 +324,7 @@ img {
 .mail {
     margin-top: 0px;
     width: 250px;
+    background-color: var(--third-color);
 }
 
 .sab {
