@@ -20,6 +20,10 @@ body {
     overflow-x: hidden;
 }
 
+body, header {
+    overflow-x: hidden;
+}
+
 img {
     width: 100%;
 }
