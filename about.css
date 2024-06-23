@@ -17,6 +17,7 @@
 body {
     background-color: var(--second-color);
     font-family: "Roboto";
+    overflow-x: hidden;
 }
 
 /* The entire navigation bar */
